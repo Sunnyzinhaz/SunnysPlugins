@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <OutputType>Library</OutputType>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <LangVersion>latest</LangVersion>
+        <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="ExMod.Exiled" Version="9.14.2"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony">
+            <HintPath>$(SL_REFERENCES)\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp-firstpass">
+            <HintPath>$(SL_REFERENCES)\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="MapEditorReborn">
+            <HintPath>$(SL_REFERENCES)\MapEditorReborn.dll</HintPath>
+        </Reference>
+        <Reference Include="Mirror">
+            <HintPath>$(SL_REFERENCES)\Mirror.dll</HintPath>
+        </Reference>
+        <Reference Include="Scp066">
+            <HintPath>$(SL_REFERENCES)\Scp066.dll</HintPath>
+        </Reference>
+        <Reference Include="Scp999">
+            <HintPath>$(SL_REFERENCES)\Scp999.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>$(SL_REFERENCES)\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+</Project>

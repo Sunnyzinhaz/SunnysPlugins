@@ -1,0 +1,136 @@
+# Liga/desliga o SCP-035.
+is_enabled: true
+# Mostra logs de debug.
+debug: false
+# ID do CustomItem SCP-035 definido em CustomItems/Items/Scp035Item.cs.
+scp035_item_id: 99
+# Configuração da CustomRole SCP-035.
+scp035_role_config:
+# Vida máxima do SCP-035.
+  max_health: 500
+  # Dano por tick da corrosão permanente.
+  corrosion_damage: 4
+  # Intervalo, em segundos, entre os ticks de corrosão.
+  corrosion_interval: 2
+  # Mantido por compatibilidade com configs antigas.
+  keep_inventory_on_spawn: true
+  # Mantido por compatibilidade com configs antigas.
+  keep_position_on_spawn: true
+# Pequeno atraso após o início do uso do SCP-1344 para casar com a animação.
+possession_delay: 0.349999994
+# Se true, o SCP-035 transfere o controle para alguém no Spectator. Se false, quem usar a máscara permanece como SCP-035.
+pull_spectator_on_possession: true
+# Hint exibida quando o jogador pega o SCP-035.
+pickup_hint: |-
+  <size=28><color=#ff3030><b>Você pegou o SCP-035</b></color></size>
+  <size=20><color=#ffffff>Ao utilizá-lo, ele possuirá seu corpo.</color></size>
+# Tempo, em segundos, da hint exibida ao pegar o SCP-035.
+pickup_hint_duration: 0
+# Posição vertical da hint de pickup no RueI.
+pickup_hint_position: 300
+# Hint exibida enquanto o SCP-035 estiver selecionado/segurado na mão.
+holding_hint: |-
+  <size=24><color=#ff3030><b>SCP-035</b></color></size>
+  <size=18><color=#ffffff>Utilize o SCP-1344 para permitir que ele possua seu corpo.</color></size>
+# Posição vertical da hint enquanto o SCP-035 estiver na mão.
+holding_hint_position: 340
+# Intervalo de verificação da hint de item segurado.
+holding_hint_check_interval: 0.5
+# Hint exibida para o espectador escolhido quando ele assume o corpo do hospedeiro.
+possessed_spectator_hint: |-
+  <size=24><color=#ff3030><b>SCP-035</b></color></size>
+  <size=18><color=#ffffff>O jogador <color=#ffd166>{player}</color> colocou a máscara do SCP-035 e você tomou posse de seu corpo...</color></size>
+# Tempo, em segundos, da hint exibida ao espectador que assume o corpo.
+possessed_spectator_hint_duration: 8
+# Posição vertical da hint mostrada ao espectador que assume o corpo.
+possessed_spectator_hint_position: 320
+# CASSIE quando o SCP-035 assume um hospedeiro.
+breach_cassie: 'pitch_0.95 attention all personnel . SCP 0 3 5 containment breach detected'
+# Mantido por compatibilidade. O anúncio de morte é montado automaticamente para evitar palavras inválidas no CASSIE.
+death_cassie_template: 'bell_start SCP 0 3 5 terminated by {killer} bell_end'
+# Nome exato da schematic do ProjectMER LabAPI.
+mask_schematic_name: '035'
+# Se true, esconde a máscara apenas do próprio jogador SCP-035. Deixe false para testar/visualizar a máscara normalmente.
+hide_mask_from_controller: false
+# Atraso antes de prender/sincronizar a máscara depois que o 035 é criado.
+mask_attach_delay: 0.5
+# Intervalo de sincronização visual da máscara. 0.10 = 10 vezes por segundo.
+mask_sync_interval: 0.0160000008
+# Offset lateral local da máscara em relação à câmera.
+mask_local_x: 0
+# Offset vertical local da máscara em relação à câmera.
+mask_local_y: -1
+# Offset frontal local da máscara em relação à câmera.
+mask_local_z: 0.119999997
+# Rotação local X da máscara.
+mask_local_pitch: 0
+# Rotação local Y da máscara.
+mask_local_yaw: 0
+# Rotação local Z da máscara.
+mask_local_roll: 0
+# TESTE/FALLBACK: prende a máscara no corpo do jogador em vez da câmera.
+use_body_anchor_for_mask: true
+# Altura local da máscara no corpo do jogador.
+mask_body_y: -1.20000005
+# Distância local da máscara para frente do corpo.
+mask_body_z: 0.200000003
+# Intervalo de verificação/log da máscara após o spawn.
+mask_debug_check_delay: 1.5
+# Delay, em segundos, após assumir a aparência humana antes de spawnar a máscara. Evita a schematic ser destruída/sumir durante a troca Tutorial -> aparência.
+mask_spawn_delay_seconds: 3
+# Frequência máxima de sincronização de rede da máscara. O root continua seguindo a cabeça todo frame. Recomendado: 6.
+mask_network_update_hz: 60
+# LEGADO: não é mais usado. Mantido para não quebrar configs antigas.
+mask_forward_offset: 0.119999997
+# LEGADO: não é mais usado. Mantido para não quebrar configs antigas.
+mask_up_offset: -0.850000024
+# Ajuste para frente do ROOT da schematic em relação aos pés do jogador.
+mask_root_forward_offset: 0
+# Avanço fixo da máscara para fora da face. Novo na v4.15; 0.10 = dez centímetros para frente.
+mask_face_forward_offset: 0.100000001
+# Ajuste vertical do ROOT da schematic em relação aos pés do jogador. Normalmente 0.
+mask_root_up_offset: -1.20000005
+# Ajuste lateral do ROOT da schematic. Positivo = direita, negativo = esquerda.
+mask_root_right_offset: 0
+# Ajuste local X aplicado depois que a schematic é parentada diretamente na câmera.
+mask_camera_local_x: 0
+# Ajuste local Y aplicado depois que a schematic é parentada diretamente na câmera.
+mask_camera_local_y: 0
+# Ajuste local Z aplicado depois que a schematic é parentada diretamente na câmera.
+mask_camera_local_z: 0
+# Rotação local extra X (pitch) da schematic depois de parentada na câmera.
+mask_camera_pitch: 0
+# Rotação local extra Y (yaw) da schematic depois de parentada na câmera.
+mask_camera_yaw: 0
+# Rotação local extra Z (roll) da schematic depois de parentada na câmera.
+mask_camera_roll: 0
+# Altura local do pivô usado para inclinar a schematic junto com o olhar. Ajuste até o pivô coincidir com o centro do rosto/máscara.
+mask_pitch_pivot_height: 1.54999995
+# Deslocamento local para frente do pivô de rotação da máscara.
+mask_pitch_pivot_forward: 0
+# Permissão necessária para usar o comando 035spawn no Remote Admin.
+spawn_command_permission: 'scp035.spawn'
+# Altura adicional do item spawnado pelo comando 035spawn.
+debug_spawn_y_offset: 0.150000006
+# Palavras/nome de CustomItems que o SCP-035 não pode pegar. A checagem ignora cores, tags, espaços e hífens.
+forbidden_pickup_names:
+- 'SCP-127'
+- 'Machete'
+- 'SCP-1509'
+# O SCP-035 continua ouvindo o chat dos SCPs, mas a própria voz dele é enviada apenas por proximidade.
+hear_scp_chat_but_speak_proximity: true
+# Tipos de item vanilla que o SCP-035 não pode nem iniciar a interação de pickup.
+forbidden_vanilla_pickup_types:
+- 'MicroHID'
+- 'Jailbird'
+- 'ParticleDisruptor'
+# Impede dano apenas entre o SCP-035 e outros SCPs. Humanos continuam podendo causar/receber dano normalmente.
+block_allied_friendly_fire: true
+# Impede que o SCP-035 seja adicionado como alvo do SCP-096.
+ignore_scp096_trigger: true
+# Impede que o SCP-035 conte como observador do SCP-173.
+ignore_scp173_observation: true
+# Escreve no console onde o SCP-035 spawnou no início da rodada.
+log_natural_spawn_location: true
+# Permite usar dummies/bots que estejam em Spectator como controller do SCP-035.
+allow_spectator_dummies: true

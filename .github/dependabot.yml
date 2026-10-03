@@ -1,0 +1,35 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+
+#CustomClasse
+
+updates:
+ - package-ecosystem: "nuget" # See documentation for possible values
+   directory: " Plugins-EXILED/CustomClasses" # Location of package manifests
+   schedule:
+    interval: "weekly"
+
+#CustomItem
+
+ - package-ecosystem: "nuget" # See documentation for possible values
+   directory: " Plugins-EXILED/CustomItems" # Location of package manifests
+   schedule:
+    interval: "weekly"
+
+# SCP-575
+
+ - package-ecosystem: "nuget" # See documentation for possible values
+   directory: " Plugins-EXILED/SCP-575" # Location of package manifests
+   schedule:
+    interval: "weekly"
+
+# SCP-035
+
+ - package-ecosystem: "nuget" # See documentation for possible values
+   directory: " Plugins-EXILED/Scp035" # Location of package manifests
+   schedule:
+    interval: "weekly"

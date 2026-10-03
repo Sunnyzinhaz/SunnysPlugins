@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <OutputType>Library</OutputType>
+        <LangVersion>latest</LangVersion>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="ExMod.Exiled" Version="9.14.2"/>
+        <PackageReference Include="RueI" Version="3.1.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="0Harmony">
+            <HintPath>$(SL_REFERENCES)\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="RueI">
+            <HintPath>$(SL_REFERENCES)\RueI.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp-firstpass">
+            <HintPath>$(SL_REFERENCES)\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="CommandSystem.Core">
+            <HintPath>$(SL_REFERENCES)\CommandSystem.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Mirror">
+            <HintPath>$(SL_REFERENCES)\Mirror.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib">
+            <HintPath>$(SL_REFERENCES)\mscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="netstandard">
+            <HintPath>$(SL_REFERENCES)\netstandard.dll</HintPath>
+        </Reference>
+        <Reference Include="Pooling">
+            <HintPath>$(SL_REFERENCES)\Pooling.dll</HintPath>
+        </Reference>
+        <Reference Include="ProjectMER">
+            <HintPath>$(SL_REFERENCES)\ProjectMER.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.Mathematics">
+            <HintPath>$(SL_REFERENCES)\Unity.Mathematics.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>$(SL_REFERENCES)\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AnimationModule">
+            <HintPath>$(SL_REFERENCES)\UnityEngine.AnimationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>$(SL_REFERENCES)\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="DOTween">
+            <HintPath>$(SL_REFERENCES)\DOTween.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+            <HintPath>$(SL_REFERENCES)\UnityEngine.PhysicsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="zxing">
+            <HintPath>$(SL_REFERENCES)\zxing.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+</Project>
