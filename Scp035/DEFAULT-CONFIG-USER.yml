@@ -78,7 +78,7 @@ mask_body_z: 0.200000003
 mask_debug_check_delay: 1.5
 # Delay, em segundos, após assumir a aparência humana antes de spawnar a máscara. Evita a schematic ser destruída/sumir durante a troca Tutorial -> aparência.
 mask_spawn_delay_seconds: 3
-# Frequência máxima de sincronização de rede da máscara. O root continua seguindo a cabeça todo frame. Recomendado: 6.
+# Frequência máxima de sincronização de rede da máscara. O root continua seguindo a cabeça, Recomendado: 6.
 mask_network_update_hz: 60
 # LEGADO: não é mais usado. Mantido para não quebrar configs antigas.
 mask_forward_offset: 0.119999997
